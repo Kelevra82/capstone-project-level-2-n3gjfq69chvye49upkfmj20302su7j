@@ -1,14 +1,42 @@
 @font-face {
   font-family: "Exo2";
-  src: url("fonts/exo2-regular.otf");
+  src: url("Exo2-Regular.otf");
 }
 body {
   background-color: rgb(22, 98, 128);
   font-family: "Exo2";
   font-size: 25px;
-  color: rgb(0, 0, 0);
+  color: rgba(10, 10, 10, 0.733);
 }
 
+.nav {
+  background-color: rgba(10, 10, 10, 0.733);
+}
+
+#navText1 {
+  color: rgb(22, 98, 128);
+}
+
+#navText2 {
+  color: rgb(22, 98, 128);
+}
+
+#nav-active {
+  background-color: rgb(3, 203, 238);
+  color: rgba(10, 10, 10, 0.733);
+}
+#nav-active:hover {
+  background-color: rgb(3, 203, 238);
+}
+
+a {
+  color: rgba(10, 10, 10, 0.733);
+}
+
+h2 {
+  color: rgb(3, 203, 238);
+  width: fit-content;
+}
 h2:hover {
   color: rgba(255, 166, 0, 0.705);
 }
@@ -33,7 +61,7 @@ label {
 .coninfo {
   font-family: "Exo2";
   font-size: 50px;
-  color: rgb(0, 0, 0);
+  color: rgba(10, 10, 10, 0.733);
   text-align: center;
   font-weight: bold;
 }

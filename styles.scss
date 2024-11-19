@@ -1,10 +1,13 @@
-$bg-color: rgb(22, 98, 128);
-$primaryTextColor: rgb(0, 0, 0);
+$bg-color: rgba(22, 98, 128, 1);
+$primaryTextColor: rgba(10, 10, 10, 0.733);
+$h2TextColor: rgb(3, 203, 238);
+$h2HoverColor: rgba(255, 166, 0, 0.705);
+
 $primaryFont: "Exo2";
 
 @font-face {
     font-family: "Exo2";
-    src: url("fonts/exo2-regular.otf");
+    src: url("Exo2-Regular.otf");
 }
 
 
@@ -15,8 +18,38 @@ body {
     color: $primaryTextColor;
 }
 
-h2:hover {
-    color: rgba(255, 166, 0, 0.705);
+.nav {
+    background-color: $primaryTextColor;
+}
+
+#navText1 {
+    color: $bg-color;
+}
+
+#navText2 {
+    color: $bg-color;
+}
+
+#nav-active {
+    background-color: $h2TextColor;
+    color: $primaryTextColor;
+
+    &:hover {
+        background-color: $h2TextColor;
+    }
+}
+
+a {
+    color: $primaryTextColor;
+}
+
+h2 {
+    color: $h2TextColor;
+    width: fit-content;
+    
+    &:hover {
+        color: $h2HoverColor;
+    }
 }
 
 label {

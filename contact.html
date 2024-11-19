@@ -18,22 +18,21 @@
     <script src="forms.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
-
+  
   <body class="container p-3">
     <header>
       <img
         width="100%"
         alt="Bounce House"
-        src="images\header.nav.jpg"
+        src="header.nav.jpg"
       />
-      <nav class="nav nav-pills nav-fill bg-dark">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link active" href="contact.html">Contact</a>
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-link" id="navText1" href="index.html">Home</a>
+        <a class="nav-link" id="navText2" href="about.html">About</a>
+        <a class="nav-link active" id="nav-active" href="contact.html">Contact</a>
       </nav>
-    </header>
-    <hr>
-
+    </header><br>
+    
     <main>
       <h1 class="coninfo"><span>Moe's City Bounce Rentals</span></h1>
       <br>
@@ -45,12 +44,12 @@
           <button class="btn-close" data-bs-dismiss="alert"></button>
         </span>
       </div><br>
-
+      
       <h2 class="text-center">Contact Us!</h2>
       <div class="container text-center">
-        <div class="row">
-          
+        <div class="row">          
           <div class="col">
+            
             <form onsubmit="myProcessForm(event)">
               <ul class="list-group m-5 p-5 fs-5">
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
@@ -91,8 +90,8 @@
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <button type="submit" class="btn btn-sm btn-primary">Submit</button>
                 </li>
-
-                  <ul id="outputTag1" class="list-group-item text-primary bg-dark border-dark"></ul>
+                
+                <ul id="outputTag1" class="list-group-item text-primary bg-dark border-dark"></ul>
               </ul>
             </form>
             
@@ -140,25 +139,23 @@
               <li class="container list-group-item text-primary bg-dark border-dashed border-dark">555-555-5555</li>
               <li class="container list-group-item text-primary bg-dark border-dashed border-dark">9qHg8@example.com</li>
             </ul>
-
+            
+            
             <h3>Reserve Now</h3>
-
-            <img class="card-img" src="images\select-state.png" usemap="#image-map" alt="Choose Your State">
+            
+            <img class="card-img" src="select-state.png" usemap="#image-map" alt="Choose Your State">
             <map name="image-map">
                 <area title="Alabama" coords="147,1, 220,2, 242,103, 241,150, 160,150, 166,170, 152,178, 135,171, 133,117" shape="poly" target="_blank" href="https://en.wikipedia.org/wiki/Alabama">
-
                 <area title="Mississippi" coords="142,1, 144,5, 131,115, 133,173, 96,178, 84,147, 29,146, 50,92, 48,46, 80,1" shape="poly" target="_blank" href="https://en.wikipedia.org/wiki/Mississippi">
             </map>
           </div>        
         </div>
       </div>
-
       <script>
         imageMapResize();
       </script>
-
     </main><br>
-
+    
     <footer class="botsig fs-5">
       <form>
         <p>Rate us!</p>
